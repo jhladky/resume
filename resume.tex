@@ -1,7 +1,9 @@
 \documentclass[12pt]{article}
 \usepackage{enumitem}
 \usepackage{multicol}
+\usepackage{multirow}
 \usepackage{tabularx}
+\usepackage{array, booktabs}
 \usepackage[top=0.5in, bottom=0.5in, left=0.8in, right=0.8in]{geometry}
 \usepackage[scaled]{helvet}
 \renewcommand\familydefault{\sfdefault}
@@ -11,17 +13,17 @@
 
 \setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
 
-\begin{document}
-
-\textbf{\huge{JACOB HLADKY}}
-jacob.hladky@gmail.com
-
-\texttt{http://hladky.me}
-
-\rule{\textwidth}{0.5pt}
-
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\begin{document}
+
+\begin{tabularx}{\textwidth}{@{}XR@{}}
+  \multirow{2}{*}[-0.25em]{\textbf{\huge{JACOB HLADKY}}} & \texttt{http://hladky.me} \\
+  & jacob.hladky@gmail.com
+\end{tabularx}
+
+\rule{\textwidth}{0.5pt}
 
 \begin{tabularx}{\textwidth}{@{}XCR@{}}
   169 Canyon Circle & San Luis Obispo, CA 93410 & (203)-252-0049 \\
